@@ -63,27 +63,7 @@ Vehicles appear only in `DK_parking` and bicycles only in `THI_Bikepark`, which 
 
 ---
 
-## Installation
 
-Requires Python 3.9+.
-
-```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-
-pip install -r requirements.txt
-```
-
-If you don't have a `requirements.txt` yet, this is the minimal set:
-
-```
-ultralytics>=8.0.0
-opencv-python
-matplotlib
-```
 
 > **Note on hardware.** All results in this repo were produced on **CPU** (the available GPU was capped at CUDA 11, below the minimum for current PyTorch builds). Training runs on GPU unchanged — pass `--device 0` to `train.py` / `evaluate.py`.
 
